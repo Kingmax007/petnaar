@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "348308736326",
+    "project_id": "petnaar-33633",
+    "storage_bucket": "petnaar-33633.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:348308736326:android:9555ec67ab06c592f17d47",
+        "android_client_info": {
+          "package_name": "com.petnaar.kingsley"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASW0tDeiuMI0k8cKPa8kDx0dZUBM_I3bE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
