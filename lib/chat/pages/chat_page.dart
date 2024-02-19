@@ -1,6 +1,10 @@
 // Ensure all imports are correct and necessary packages are added to your pubspec.yaml.
-
+import 'dart:io';
+import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
+import 'package:image_picker/image_picker.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class Chat extends StatelessWidget {
   final String receiverId;
@@ -95,7 +99,7 @@ class _ChatScreenState extends State<ChatScreen> {
   }
 
   @override
-  Widget build(BuildContext context) {
+  Future<Widget> build (BuildContext context) async {
     // Your widget building logic here.
   }
 }

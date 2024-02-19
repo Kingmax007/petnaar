@@ -46,7 +46,7 @@ class ActivityFeedItem extends StatelessWidget {
       leading: CircleAvatar(backgroundImage: CachedNetworkImageProvider(userProfileImg)),
       title: Text('$username $activityItemText', overflow: TextOverflow.ellipsis),
 
-      subtitle: Text(timeago.TimeAgo.getTimeAgo(timestamp.toDate())),
+      subtitle: Text(timeago.format(timestamp.toDate())),
       trailing: mediaPreview,
       onTap: () => showPost(context, userId: userId, postId: postId),
     );

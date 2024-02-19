@@ -94,8 +94,7 @@ class _ProfileState extends State<Profile> {
       ),
       child: const Text('Edit Profile'),
       style: OutlinedButton.styleFrom(
-        primary: Colors.white,
-        backgroundColor: Theme.of(context).primaryColor,
+        foregroundColor: Colors.white, backgroundColor: Theme.of(context).primaryColor,
         side: BorderSide(color: Theme.of(context).primaryColor),
       ),
     )
@@ -109,8 +108,7 @@ class _ProfileState extends State<Profile> {
       onPressed: onPressed,
       child: Text(text),
       style: ElevatedButton.styleFrom(
-        primary: isFollowing ? Colors.grey : Colors.blue,
-        onPrimary: Colors.white,
+        foregroundColor: Colors.white, backgroundColor: isFollowing ? Colors.grey : Colors.blue,
       ),
     );
   }

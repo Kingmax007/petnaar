@@ -23,6 +23,7 @@ class _StoryScreenState extends State<StoryScreen> {
     super.initState();
     _pageController = PageController();
     _animationController = AnimationController(vsync: this);
+
     _loadStory(story: widget.stories[_currentIndex], animateToPage: false);
   }
 

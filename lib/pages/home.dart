@@ -7,7 +7,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:google_sign_in/google_sign_in.dart';
+import 'package:petnaar/pages/profile.dart';
 import 'package:petnaar/pages/timeline.dart';
+import 'package:petnaar/pages/upload.dart';
 
 
 
@@ -22,7 +24,7 @@ final followersRef = firestoreInstance.collection('followers');
 final followingRef = firestoreInstance.collection('following');
 final timelineRef = firestoreInstance.collection('timeline');
 final messagesRef = firestoreInstance.collection('messages');
-UserModel? currentUserModel;
+
 
 class Home extends StatefulWidget {
   @override

@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:PetNaar/models/post.dart'; // Assume this is your Post model
-import 'package:PetNaar/widgets/CustomVideoPlayer.dart'; // Renamed BuildVideo to CustomVideoPlayer for clarity
-import 'package:PetNaar/widgets/progress.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:petnaar/widgets/post.dart';
 import 'package:video_player/video_player.dart';

@@ -44,8 +44,8 @@ class _CreateAccountState extends State<CreateAccount> {
       ),
       body: ListView(
         children: <Widget>[
-          Padding(
-            padding: const EdgeInsets.only(top: 25.0),
+          const Padding(
+            padding: EdgeInsets.only(top: 25.0),
             child: Center(
               child: Text(
                 "Create a username",
@@ -68,7 +68,7 @@ class _CreateAccountState extends State<CreateAccount> {
                   }
                 },
                 onSaved: (val) => _username = val!,
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                   border: OutlineInputBorder(),
                   labelText: "Username",
                   labelStyle: TextStyle(fontSize: 15.0),
@@ -82,11 +82,10 @@ class _CreateAccountState extends State<CreateAccount> {
             child: ElevatedButton(
               onPressed: _submit,
               style: ElevatedButton.styleFrom(
-                primary: Colors.blue, // background
-                onPrimary: Colors.white, // foreground
-                minimumSize: Size(350.0, 50.0), // width and height
+                foregroundColor: Colors.white, backgroundColor: Colors.blue, // foreground
+                minimumSize: const Size(350.0, 50.0), // width and height
               ),
-              child: Text(
+              child: const Text(
                 "Submit",
                 style: TextStyle(fontSize: 15.0, fontWeight: FontWeight.bold),
               ),

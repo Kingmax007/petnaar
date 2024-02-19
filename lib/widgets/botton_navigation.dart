@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
-import 'package:PetNaar/pages/upload.dart';
-import 'package:PetNaar/pages/timeline.dart';
-import 'package:PetNaar/pages/search.dart';
-import 'package:PetNaar/pages/activity_feed.dart';
-import 'package:PetNaar/pages/profile.dart';
+import 'package:petnaar/pages/timeline.dart';
+import '../model/user.dart';
+import '../pages/profile.dart';
+import '../pages/upload.dart';
+
 // Assume currentUser is properly imported or defined
 
 class BottomNavBar extends StatefulWidget {

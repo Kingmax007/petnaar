@@ -23,6 +23,7 @@ class User {
     required this.bio,
     required this.androidNotificationToken,
     required this.chattingWith,
+
   });
 
   factory User.fromDocument(DocumentSnapshot doc) {

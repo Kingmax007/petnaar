@@ -3,11 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:firebase_storage/firebase_storage.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:PetNaar/widgets/progress.dart';
-import 'package:PetNaar/pages/home.dart';
+
+import '../../pages/home.dart';
+
 
 class SettingsPage extends StatelessWidget {
   @override
@@ -17,8 +17,7 @@ class SettingsPage extends StatelessWidget {
         iconTheme: IconThemeData(color: Colors.white),
         backgroundColor: Colors.orangeAccent,
         title: Text(
-          "Account Settings",
-          style: TextStyle(fontFamily: "Kalam", fontWeight: FontWeight.bold, color: Colors.white),
+          "Account Settings", style: TextStyle(fontFamily: "Kalam", fontWeight: FontWeight.bold, color: Colors.white),
         ),
         centerTitle: true,
       ),
@@ -48,7 +47,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
   }
 
   Future<void> _getImage() async {
-    File? newImgFile = await ImagePicker.pickImage(source: ImageSource.gallery);
+    XFile? newImgFile = await ImagePicker.pickImage(source: ImageSource.gallery);
     if (newImgFile != null) {
       setState(() => _imageFileAvatar = newImgFile);
     }
@@ -149,7 +148,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
     return ElevatedButton(
       onPressed: _updateData,
       child: Text("Update Profile"),
-      style: ElevatedButton.styleFrom(primary: Colors.orangeAccent),
+      style: ElevatedButton.styleFrom(backgroundColor: Colors.orangeAccent),
     );
   }
 
